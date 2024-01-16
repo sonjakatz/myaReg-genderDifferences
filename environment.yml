@@ -1,0 +1,15 @@
+name: env_myaReg
+channels:
+  - conda-forge
+dependencies: 
+  - pip
+  - python=3.10.*
+  - ipykernel
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - umap-learn
+  - seaborn
+  - shap
+
