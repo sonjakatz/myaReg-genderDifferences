@@ -1,0 +1,5 @@
+age_erstmanifestation
+Diagnosedauer
+scoreadl_neu
+autoimmunerkrankungen_rbzu
+thymektomie_gr

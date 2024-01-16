@@ -1,0 +1,10 @@
+{
+    "age_erstmanifestation": 1.0,
+    "Diagnosedauer": 1.0,
+    "scoreadl_neu": 1.0,
+    "autoimmunerkrankungen_rbzu": 1.0,
+    "achrak_rb": 0.94,
+    "thymektomie_gr": 1.0,
+    "mgfaklassifikation_schlimmste_historisch_rb": 0.84,
+    "eskalationstherapiebeitherapierefraktaerermyasthenie_grrb": 0.3
+}
