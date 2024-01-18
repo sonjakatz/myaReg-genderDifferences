@@ -36,7 +36,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-PATH_base = "/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
+PATH_base = "/home/sonja/PROJECTS/myaReg-genderDifferences"
 
 ''' 
 Prepare data --> change here for different setups!
@@ -74,8 +74,8 @@ outer_cv = 10
 Read data
 '''
 data = read_data(PATH_base,FILENAME="all_data_edited_v3_mgfaRecoded_inverse")
-X = data.drop(target, axis=1)
-y = data[target]
+X_orig = data.drop(target, axis=1)
+y_orig = data[target]
 
 # ##### FOR DEVELOPMENT PURPOSES: smaller dataset
 # X = X.iloc[:100,:]
@@ -88,12 +88,12 @@ sel_variables = pd.read_csv(varPath, header=None)[0].tolist()
 print(sel_variables)
 
 #### bootstrapped 
-num_bootstrap = 5
+num_bootstrap = 45
 
 for i in range(num_bootstrap):
-      bootstrapped_pid = random.choices(X.index.tolist(), k=round(X.shape[0]*.8))
-      X = X.loc[bootstrapped_pid, :]
-      y = y[bootstrapped_pid]
+      bootstrapped_pid = random.choices(X_orig.index.tolist(), k=round(X_orig.shape[0]*.8))
+      X = X_orig.loc[bootstrapped_pid, :].copy()
+      y = y_orig[bootstrapped_pid].copy()
 
       ''' 
       Run Pipeline
@@ -110,7 +110,7 @@ for i in range(num_bootstrap):
 
                   saveIndivdualPred = False
 
-                  clf = GridSearchCV(models[model], grids[model], scoring='balanced_accuracy', verbose=1, cv=inner_cv, n_jobs=-1) ## cv=3  ##changed this for svc to cv=2; otherwise takes too long!
+                  clf = GridSearchCV(models[model], grids[model], scoring='balanced_accuracy', verbose=1, cv=inner_cv, n_jobs=6) ## cv=3  ##changed this for svc to cv=2; otherwise takes too long!
                   result = classify_CV(clf, 
                                     X, 
                                     y,
