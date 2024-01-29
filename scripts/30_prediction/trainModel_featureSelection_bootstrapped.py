@@ -42,7 +42,7 @@ PATH_base = "/home/sonja/PROJECTS/myaReg-genderDifferences"
 Prepare data --> change here for different setups!
 '''
 target = "gender"
-percentBoruta = 100
+percentBoruta = 80
 
 ''' 
 Select features
@@ -89,7 +89,7 @@ sel_variables = pd.read_csv(varPath, header=None)[0].tolist()
 print(sel_variables)
 
 #### bootstrapped 
-num_bootstrap = 2
+num_bootstrap = 50
 
 for i in range(num_bootstrap):
       bootstrapped_pid = random.choices(X_orig.index.tolist(), k=round(X_orig.shape[0]*.8))
@@ -113,7 +113,7 @@ for i in range(num_bootstrap):
 
                   saveIndivdualPred = False
 
-                  clf = GridSearchCV(models[model], grids[model], scoring='balanced_accuracy', verbose=1, cv=inner_cv, n_jobs=-1) ## cv=3  ##changed this for svc to cv=2; otherwise takes too long!
+                  clf = GridSearchCV(models[model], grids[model], scoring='balanced_accuracy', verbose=1, cv=inner_cv, n_jobs=6) ## cv=3  ##changed this for svc to cv=2; otherwise takes too long!
                   result = classify_CV(clf, 
                                     X, 
                                     y,

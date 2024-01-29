@@ -16,7 +16,7 @@ from func_prediction import imputation_scaling, SupervisedSelector
 np.random.seed(11) 
 
 ########  SETTINGS  ########
-percentBoruta = 100
+percentBoruta = 80
 CV_repeats = 30
 n_splits_outer = 10      
 n_splits_inner = 3     
