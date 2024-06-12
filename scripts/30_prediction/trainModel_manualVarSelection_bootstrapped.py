@@ -46,7 +46,7 @@ target = "gender"
 ''' 
 Select features
 '''
-vars = f"allVars_mgfaRecoded"    
+vars = f"boruta80_removeThymectomy"    
 varPath = f"{PATH_base}/results/20_featureSelection/manual_selection/{vars}.txt"
 
 ''' 
