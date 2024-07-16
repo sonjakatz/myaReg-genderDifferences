@@ -68,6 +68,7 @@ def func_plot_dimRed(df_dimRed, df_inverseTransform, pca_varRatio, varInterest=F
     "aktuelle_MGFA_umkodiert":"MGFA (current)",
     "muskelschmerz":"muscle pain",
     "zn_myasthener_exazerbation":"previous MG exacerbation",
+    "category":"category"
 }
 
     sns.set_theme(style="white", font_scale=1.7)
