@@ -1,0 +1,8 @@
+env_myaReg
+
+
+LOADING DATA
+(1814, 40)
+['age_erstmanifestation', 'Diagnosedauer', 'scoreadl_neu', 'autoimmunerkrankungen_rbzu', 'thymektomie_gr']
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
