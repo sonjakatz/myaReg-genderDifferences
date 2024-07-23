@@ -1,7 +1,7 @@
 #!/bin/bash
 #-----------------------------Other information------------------------
 #SBATCH --comment=773320000
-#SBATCH --job-name=man
+#SBATCH --job-name=cluster_100
 #-----------------------------Required resources-----------------------
 #SBATCH --time=2000
 #SBATCH --mem=2048
@@ -22,7 +22,7 @@ echo $CONDA_DEFAULT_ENV
 
 HOME="/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
 cd $HOME
-N_ITER=200
+N_ITER=300
 
 
 ### Bootstrapping

@@ -1,9 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
-import random
-import re
-import sys
 
 from sklearn import svm, datasets
 from sklearn.metrics import auc, roc_curve, average_precision_score

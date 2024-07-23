@@ -56,15 +56,15 @@ saveFig_quickCheck = False
 ''' 
 IF: automated feature selection
 '''
-# percentBoruta = 100
-# varFolder = "CV_v3_mgfaRecoded"
-# vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
+percentBoruta = 100
+varFolder = "clusterVariables_boruta"
+vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
 
-''' 
-ELSE: Manual variable list
-'''
-varFolder = "manual_selection"
-vars = "allVars_mgfaRecoded"
+# # ''' 
+# # ELSE: Manual variable list
+# # '''
+# varFolder = "manual_selection"
+# vars = "allVars_mgfaRecoded"
 
 #########################################################
 
@@ -112,13 +112,14 @@ y = data[target]
 # X = X.iloc[:100,:]
 # y = y[:100]
 print(X.shape)
+print(y.value_counts())
 
 
 ''' 
 Read in variables
 '''
 sel_variables = pd.read_csv(varPath, header=None)[0].tolist()
-print(sel_variables)
+print(len(sel_variables), sel_variables)
 
 ''' 
 Prepare imputation and scaling
@@ -173,7 +174,5 @@ with open(f'{resultsPath}/bootstrap_{model}_n{n_bootstrap}_shap.pickle', 'wb') a
 
 with open(f'{resultsPath}/bootstrap_{model}_n{n_bootstrap}_predProba.pickle', 'wb') as f:
     pickle.dump(dic_summary_predProba, f, protocol=pickle.HIGHEST_PROTOCOL)
-
-
 
 

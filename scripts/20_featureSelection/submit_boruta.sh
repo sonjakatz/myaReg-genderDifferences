@@ -1,9 +1,9 @@
 #!/bin/bash
 #-----------------------------Other information------------------------
 #SBATCH --comment=773320000
-#SBATCH --job-name=fs
+#SBATCH --job-name=fs_hist
 #-----------------------------Required resources-----------------------
-#SBATCH --time=500
+#SBATCH --time=1500
 #SBATCH --mem=2048
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=6

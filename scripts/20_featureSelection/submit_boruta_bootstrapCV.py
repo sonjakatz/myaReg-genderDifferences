@@ -17,7 +17,7 @@ import sys
 sys.path.append("../")
 
 from func_preprocess import read_data, subset_wo_missigness, remove_NA, parseVariables, clean_data, impute_scale 
-from func_pred import imputation_scaling
+from func_prediction import imputation_scaling
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.experimental import enable_iterative_imputer
@@ -59,16 +59,19 @@ def run_iterativeBoruta(X, y, cols, perc=100, n_iter=100, max_iter=100):
     return dict_boruta
 
 
-PATH = "../../"
+PATH = "/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
 
 ###################     EDIT HERE    ###################
 target = "gender"
-PATH_out = f"{PATH}/results/20_featureSelection/CV_v3_mgfaRecoded"   
-#########################################################            
-os.makedirs(PATH_out, exist_ok=True)
+dataset = "histologie_subgroup"
+PATH_out = f"{PATH}/results/20_featureSelection/{dataset}/boruta"
 
 ''' 1. read data '''
-data = read_data(PATH, FILENAME="all_data_edited_v3_mgfaRecoded_inverse")
+data = read_data(PATH, FILENAME=f"{dataset}")  ### {dataset}_variables
+
+#########################################################            
+
+os.makedirs(PATH_out, exist_ok=True)
 
 
 ''' 
@@ -88,8 +91,9 @@ data_clean = remove_NA(data, cutoff_perc=35)
 
 ''' 
 3. OPTIONAL. remove the ones we dont like (correlated or else)
+
 '''
-vars2remove = pd.read_csv(f"{PATH}/data/variables_to_remove_v3.txt", header=None)[0].tolist()     
+vars2remove = pd.read_csv(f"{PATH}/data/variables_to_remove_fullRegistry.txt", header=None)[0].tolist()     
 data_clean_parsed = parseVariables(data_clean, vars2remove)
 print(data_clean_parsed.columns)
 
@@ -98,13 +102,13 @@ print(data_clean_parsed.columns)
 '''
 data_clean_parsed = clean_data(data_clean_parsed)
 
-
 ''' 
 5. prepare X and y
 '''
 X = data_clean_parsed.drop(target, axis=1)
 y = data_clean_parsed[target]
 
+print(X.shape)
 print(X)
 print(y.value_counts())
 
@@ -117,9 +121,9 @@ preprocessor = imputation_scaling(num_columns, bin_columns, cat_columns, X)
 columnOrderAfterPreprocessing = [ele[5:] for ele in preprocessor.get_feature_names_out()]
 
 
-for perc in [100,90,80]:
+for perc in [100,80]:
 
-    for i in range(30):  ## 1,30
+    for i in range(50):  ## 1,30
 
         outname_json=f"{i}__{target}_iterativeBoruta_{perc}perc.json"
 

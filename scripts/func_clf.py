@@ -143,7 +143,7 @@ def classify_boostrap_inclSHAP(X,
     shap_values_per_bootstrap = dict()
     explainer = shap.TreeExplainer(gs.best_estimator_["classifier"])
     X_test_imputed = gs.best_estimator_["imputation"].transform(X_test)
-    shap_values = explainer.shap_values(X_test_imputed)[0] #explainer.shap_values(X_test_imputed)[:,:,1]
+    shap_values = explainer.shap_values(X_test_imputed)[1] #explainer.shap_values(X_test_imputed)[:,:,1]
     # Extract SHAP information per fold per sample 
     for i, idx in enumerate(test_idx):
         shap_values_per_bootstrap[idx] = shap_values[i] #-#-#

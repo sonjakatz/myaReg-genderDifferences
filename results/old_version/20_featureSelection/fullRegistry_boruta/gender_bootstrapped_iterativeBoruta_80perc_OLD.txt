@@ -1,0 +1,11 @@
+age_erstmanifestation
+Diagnosedauer
+scoreadl_neu
+chronicfatigue_neu
+seelischesbefinden_neu
+generalisiertemuskelschwaeche
+autoimmunerkrankungen_rbzu
+achrak_rb
+thymektomie_gr
+aktuelle_MGFA_umkodiert
+mgfaklassifikation_schlimmste_historisch_rb
