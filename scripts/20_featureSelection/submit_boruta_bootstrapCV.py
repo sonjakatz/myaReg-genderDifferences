@@ -3,7 +3,7 @@
 
 Iterative bootstrapped BorutaPy 
 
-(c) Sonja Katz, 2023
+(c) Sonja Katz, 2024
 
 '''
 
@@ -63,7 +63,7 @@ PATH = "/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
 
 ###################     EDIT HERE    ###################
 target = "gender"
-dataset = "histologie_subgroup"
+dataset = "fullRegistry"    #"histologie_subgroup"
 PATH_out = f"{PATH}/results/20_featureSelection/{dataset}/boruta"
 
 ''' 1. read data '''
@@ -121,9 +121,9 @@ preprocessor = imputation_scaling(num_columns, bin_columns, cat_columns, X)
 columnOrderAfterPreprocessing = [ele[5:] for ele in preprocessor.get_feature_names_out()]
 
 
-for perc in [100,80]:
+for perc in [80]:    ### 100,80
 
-    for i in range(50):  ## 1,30
+    for i in range(50,80):  ## 1,30
 
         outname_json=f"{i}__{target}_iterativeBoruta_{perc}perc.json"
 

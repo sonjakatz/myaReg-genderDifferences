@@ -175,7 +175,7 @@ def externalValidate_boostrap_inclSHAP(X,
     ''' Bootstrap '''
     val_idx, _ = sample_w_replacement(X, 
                                       n_size=np.ceil(X.shape[0]*perc_samples_per_boostrap).astype("int"),
-                                      stratify=y,
+                                      stratify=y.to_numpy(),
                                       random_state=None)       
 
 
@@ -208,7 +208,7 @@ def externalValidate_boostrap_inclSHAP(X,
     # Use SHAP to explain predictions
     shap_values_per_bootstrap = dict()
     explainer = shap.TreeExplainer(clf)
-    shap_values = explainer.shap_values(X_val)[:,:,1]
+    shap_values = explainer.shap_values(X_val)[1]   #[:,:,1]
     # Extract SHAP information per fold per sample 
     for i, idx in enumerate(val_idx):
         shap_values_per_bootstrap[idx] = shap_values[i] #-#-#

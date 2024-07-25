@@ -38,16 +38,18 @@ import pickle
 def get_input():
     try:
         n_bootstrap = sys.argv[1]
+        dataset = sys.argv[2]
+        percentBoruta = sys.argv[3]
     except IndexError:
         print("ERROR\tPlease enter a valid dataset name (ENTRY, PRESURGERY,POSTSURGERY, BL)")
         sys.exit()
-    return int(n_bootstrap)
+    return int(n_bootstrap), dataset, int(percentBoruta)
 
 
 ''' 
 Prepare input
 '''
-n_bootstrap = get_input()
+n_bootstrap, dataset, percentBoruta = get_input()
 target = "gender"
 saveFig_quickCheck = False
 
@@ -56,15 +58,14 @@ saveFig_quickCheck = False
 ''' 
 IF: automated feature selection
 '''
-percentBoruta = 100
-varFolder = "clusterVariables_boruta"
+varFolder = "boruta"
 vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
 
-# # ''' 
-# # ELSE: Manual variable list
-# # '''
-# varFolder = "manual_selection"
-# vars = "allVars_mgfaRecoded"
+# ''' 
+# ELSE: Manual variable list
+# '''
+# varFolder = "manual"
+# vars = "partiallyValidated" #"allVariables"
 
 #########################################################
 
@@ -72,14 +73,14 @@ vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
 ''' 
 Select features
 '''
-varPath = f"{PATH_base}/results/20_featureSelection/{varFolder}/{vars}.txt"
+varPath = f"{PATH_base}/results/20_featureSelection/{dataset}/{varFolder}/{vars}.txt"
 
 ''' 
 Define paths
 '''
-folderFigures = f"{PATH_base}/figures/30_internalValidation/{varFolder}/{vars}"
+folderFigures = f"{PATH_base}/figures/30_internalValidation/{dataset}/{vars}"
 os.makedirs(folderFigures, exist_ok=True)
-resultsPath = f"{PATH_base}/results/30_internalValidation/{varFolder}/{vars}"
+resultsPath = f"{PATH_base}/results/30_internalValidation/{dataset}/{vars}"
 os.makedirs(resultsPath, exist_ok=True)
 
 
@@ -98,7 +99,7 @@ grids = {'rfc':{
 ''' 
 Read data
 '''
-data = read_data(PATH_base,FILENAME="all_data_edited_v3_mgfaRecoded_inverse")
+data = read_data(PATH_base,FILENAME=f"{dataset}")
 X_orig = data.drop(target, axis=1)
 y_orig = data[target]
 

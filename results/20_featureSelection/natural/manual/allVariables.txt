@@ -1,0 +1,15 @@
+zn_myasthener_krise_jn
+zn_myasthener_exazerbation
+aktueller_mgfa_score
+mgfaklassifikation_schlimmste_historisch_rb
+okulaer
+bulbaer
+generalisiertemuskelschwaeche
+muskelschmerz
+autoimmunerkrankungen_rbzu
+achrak_rb
+antimuskak_rb
+age_erstmanifestation
+scoreadl_neu
+chronicfatigue_neu
+seelischesbefinden_neu

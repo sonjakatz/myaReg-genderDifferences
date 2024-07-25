@@ -1,0 +1,16 @@
+{
+    "age_erstmanifestation": 1.0,
+    "Diagnosedauer": 1.0,
+    "scoreadl_neu": 1.0,
+    "chronicfatigue_neu": 1.0,
+    "seelischesbefinden_neu": 1.0,
+    "generalisiertemuskelschwaeche": 1.0,
+    "autoimmunerkrankungen_rbzu": 1.0,
+    "achrak_rb": 1.0,
+    "thymektomie_gr": 1.0,
+    "immuntherapie_grrb": 0.56,
+    "aktueller_mgfa_score": 0.4,
+    "mgfaklassifikation_schlimmste_historisch_rb": 0.96,
+    "rituximab_sprb": 0.08,
+    "eskalationstherapiebeitherapierefraktaerermyasthenie_grrb": 0.1
+}

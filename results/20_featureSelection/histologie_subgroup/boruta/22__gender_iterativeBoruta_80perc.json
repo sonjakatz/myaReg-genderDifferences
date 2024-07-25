@@ -1,0 +1,13 @@
+{
+    "age_erstmanifestation": 1.0,
+    "Diagnosedauer": 1.0,
+    "scoreadl_neu": 1.0,
+    "chronicfatigue_neu": 1.0,
+    "seelischesbefinden_neu": 1.0,
+    "generalisiertemuskelschwaeche": 1.0,
+    "autoimmunerkrankungen_rbzu": 1.0,
+    "methotrexatfolsauure_sprb": 0.58,
+    "mgfaklassifikation_schlimmste_historisch_rb": 0.2,
+    "immuntherapie_grrb": 0.14,
+    "aktueller_mgfa_score": 0.1
+}

@@ -5,7 +5,7 @@ Train model on whole dataset to use later for external validation
 '''
 
 
-PATH = "/home/WUR/katz001/PROJECTS/permit-nsti-gas"
+PATH = "/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
 
 import os
 import numpy as np
@@ -17,7 +17,8 @@ sys.path.append(f"{PATH}/scripts")
 import seaborn as sns 
 import matplotlib.pyplot as plt
 
-from func_preprocess import pipe_imputation_scaling, pipe_supervisedSelector
+from func_preprocess import read_data, subset_wo_missigness, remove_NA, parseVariables, clean_data, impute_scale 
+from func_prediction import pipe_imputation_scaling, pipe_supervisedSelector
 from sklearn.model_selection import GridSearchCV
 
 from sklearn.ensemble import RandomForestClassifier
@@ -29,37 +30,35 @@ import joblib
 
 def get_input():
     try:
-        datasetTimepoint = sys.argv[1]
+        dataset = sys.argv[1]
     except IndexError:
         print("ERROR\tPlease enter a valid dataset name (ENTRY, PRESURGERY,POSTSURGERY, BL)")
         sys.exit()
-    return datasetTimepoint
+    return dataset
 
 
 ''' 
 Prepare data --> change here for different setups!
 '''
-datasetTimepoint = get_input()
-#datasetTimepoint = "PRESURGERY"
-
-target = "Conclusion_micro"
-percentBoruta = 100
+dataset = get_input()
+target = "gender"
 
 ''' 
 Select features
 '''
-vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"   
-varPath = f"{PATH}/results/20_featureSelection/{datasetTimepoint}/CV/{vars}.txt"
+varFolder = "manual"
+vars = "partiallyValidated" #"allVariables"
+varPath = f"{PATH}/results/20_featureSelection/{dataset}/{varFolder}/{vars}.txt"
+
 
 ''' 
 Define paths
 '''
-folderFigures = f"{PATH}/figures/{datasetTimepoint}/40_internalValidation"
+folderFigures = f"{PATH}/figures/30_internalValidation/{dataset}/{vars}"
 os.makedirs(folderFigures, exist_ok=True)
-resultsPath = f"{PATH}/results/40_internalValidation/{datasetTimepoint}"
+resultsPath = f"{PATH}/results/30_internalValidation/{dataset}/{vars}"
 os.makedirs(resultsPath, exist_ok=True)
-dataPath = f"{PATH}/results/10_preprocessed/"
-dataset = f"{datasetTimepoint}_{target}_preprocessed.csv"
+
 
 
 models = {
@@ -77,15 +76,7 @@ grids = {'rfc':{
 ''' 
 Read data
 '''
-with open(f"{PATH}/data/data_dtypes.json", "r") as f:
-    dtypes = json.load(f)
-data = pd.read_csv(f"{dataPath}/{dataset}", index_col=0, dtype=dtypes)
-tmp = data.select_dtypes(include=["float32"]).columns 
-data[tmp] = data[tmp].astype(pd.Int64Dtype())
-
-''' 
-Split
-'''
+data = read_data(PATH,FILENAME=f"{dataset}")
 X = data.drop(target, axis=1)
 y = data[target]
 
@@ -93,10 +84,14 @@ y = data[target]
 # X = X.iloc[:150,:]
 # y = y[:150]
 
+print(X.shape)
+print(y.value_counts())
+
 ''' 
 Read in variables
 '''
 sel_variables = pd.read_csv(varPath, header=None)[0].tolist()
+print(sel_variables)
 
 ''' 
 Prepare imputation and scaling
@@ -119,7 +114,7 @@ pipe = Pipeline([("selector", pipe_supervisedSelector(sel_variables)),
                         ("classifier", models[model])])
 
 ### Inner CV: random seed
-gs = GridSearchCV(pipe, grids[model], scoring='balanced_accuracy', verbose=1, cv=3, n_jobs=-1) 
+gs = GridSearchCV(pipe, grids[model], scoring='balanced_accuracy', verbose=1, cv=5, n_jobs=-1) 
 gs.fit(X, y)
 
 print(gs.best_estimator_)

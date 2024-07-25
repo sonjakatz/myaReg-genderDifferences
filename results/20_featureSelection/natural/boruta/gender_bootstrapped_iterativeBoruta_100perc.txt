@@ -1,0 +1,5 @@
+age_erstmanifestation
+scoreadl_neu
+chronicfatigue_neu
+autoimmunerkrankungen_rbzu
+seelischesbefinden_neu

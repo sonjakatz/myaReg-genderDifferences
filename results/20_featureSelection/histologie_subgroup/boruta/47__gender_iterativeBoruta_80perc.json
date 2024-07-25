@@ -1,0 +1,12 @@
+{
+    "age_erstmanifestation": 1.0,
+    "Diagnosedauer": 1.0,
+    "scoreadl_neu": 1.0,
+    "chronicfatigue_neu": 1.0,
+    "seelischesbefinden_neu": 1.0,
+    "generalisiertemuskelschwaeche": 0.96,
+    "autoimmunerkrankungen_rbzu": 0.9,
+    "mgfaklassifikation_schlimmste_historisch_rb": 0.22,
+    "thymushyperlasie_ja_nein": 0.02,
+    "thymom_ja_nein": 0.02
+}
