@@ -1,0 +1,10 @@
+{ 
+    "age_erstmanifestation": "agefirstsymp",
+    "Diagnosedauer": "Delay_years",
+    "scoreadl_neu": "MGadl",
+    "seelischesbefinden_neu": "HADSd",
+    "autoimmunerkrankungen_rbzu": "AIDhistory",
+    "achrak_rb": "MGsubgroup_inclPATreported_achrak",
+    "thymektomie_gr": "Thymectomy",
+    "gender":"gender"
+}

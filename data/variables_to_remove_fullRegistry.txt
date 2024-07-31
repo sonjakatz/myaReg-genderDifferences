@@ -1,0 +1,3 @@
+age
+age_bei_diagnose
+scoreqol_neu

@@ -1,7 +1,7 @@
 #!/bin/bash
 #-----------------------------Other information------------------------
 #SBATCH --comment=773320000
-#SBATCH --job-name=mod
+#SBATCH --job-name=hist
 #-----------------------------Required resources-----------------------
 #SBATCH --time=2000
 #SBATCH --mem=2048
@@ -22,8 +22,8 @@ echo $CONDA_DEFAULT_ENV
 
 HOME="/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
 cd $HOME
-N_ITER=300
-DATASET="natural"   #"natural"  #"fullRegistry" #histologie_subgroup" 
+N_ITER=50
+DATASET="histologie_subgroup"   #"natural"  #"fullRegistry" #histologie_subgroup" 
 BORUTAPERC=80
 
 

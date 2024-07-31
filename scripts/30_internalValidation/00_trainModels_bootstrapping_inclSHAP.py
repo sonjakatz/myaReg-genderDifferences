@@ -55,17 +55,17 @@ saveFig_quickCheck = False
 
 ################### Variable selection ###################
 
-''' 
-IF: automated feature selection
-'''
-varFolder = "boruta"
-vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
-
 # ''' 
-# ELSE: Manual variable list
+# IF: automated feature selection
 # '''
-# varFolder = "manual"
-# vars = "partiallyValidated" #"allVariables"
+# varFolder = "boruta"
+# vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
+
+''' 
+ELSE: Manual variable list
+'''
+varFolder = "manual"
+vars = "onlyHisto" #"allVariables"
 
 #########################################################
 

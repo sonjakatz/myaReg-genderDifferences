@@ -101,7 +101,8 @@ Split
 '''
 X_val = data.drop(target, axis=1)
 y_val = data[target].values
-
+print(variables)
+print(variables_dutch)
 
 # # FOR DEVELOPMENT PURPOSES: smaller dataset
 # X_val = X_val.iloc[:70,:]
