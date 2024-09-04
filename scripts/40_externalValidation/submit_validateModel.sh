@@ -27,7 +27,6 @@ N_ITER=300
 
 python scripts/40_externalValidation/20_validateModels_bootstrapping_inclSHAP.py $N_ITER
 
-##python scripts/40_externalValidation/30_validateModels_finetune.py $DATASET $N_ITER
 
 
 

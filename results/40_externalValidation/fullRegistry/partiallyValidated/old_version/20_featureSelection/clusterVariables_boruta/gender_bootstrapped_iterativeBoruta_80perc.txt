@@ -1,0 +1,7 @@
+age_erstmanifestation
+Diagnosedauer
+scoreadl_neu
+autoimmunerkrankungen_rbzu
+achrak_rb
+thymektomie_gr
+mgfaklassifikation_schlimmste_historisch_rb

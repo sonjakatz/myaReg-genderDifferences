@@ -1,0 +1,6 @@
+age_erstmanifestation
+scoreadl_neu
+chronicfatigue_normalised
+seelischesbefinden_neu
+autoimmunerkrankungen_rbzu
+generalisiertemuskelschwaeche

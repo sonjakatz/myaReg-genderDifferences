@@ -31,23 +31,28 @@ import joblib
 def get_input():
     try:
         dataset = sys.argv[1]
+        percentBoruta = sys.argv[2]
     except IndexError:
         print("ERROR\tPlease enter a valid dataset name (ENTRY, PRESURGERY,POSTSURGERY, BL)")
         sys.exit()
-    return dataset
+    return dataset, int(percentBoruta)
 
 
 ''' 
 Prepare data --> change here for different setups!
 '''
-dataset = get_input()
+dataset, percentBoruta = get_input()
 target = "gender"
 
 ''' 
 Select features
 '''
-varFolder = "manual"
-vars = "partiallyValidated" #"allVariables"
+# varFolder = "manual"
+# vars = "partiallyValidated" #"allVariables"
+
+varFolder = "boruta"
+vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
+
 varPath = f"{PATH}/results/20_featureSelection/{dataset}/{varFolder}/{vars}.txt"
 
 

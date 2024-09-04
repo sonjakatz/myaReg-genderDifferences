@@ -1,5 +1,5 @@
 age_erstmanifestation
 scoreadl_neu
-chronicfatigue_neu
+chronicfatigue_normalised
 autoimmunerkrankungen_rbzu
 seelischesbefinden_neu

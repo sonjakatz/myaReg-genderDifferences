@@ -1,4 +1,4 @@
 age_erstmanifestation
 scoreadl_neu
-chronicfatigue_neu
+chronicfatigue_normalised
 Diagnosedauer

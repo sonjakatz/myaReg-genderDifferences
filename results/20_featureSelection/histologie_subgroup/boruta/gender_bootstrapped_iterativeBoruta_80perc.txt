@@ -1,7 +1,7 @@
 age_erstmanifestation
 Diagnosedauer
 scoreadl_neu
-chronicfatigue_neu
+chronicfatigue_normalised
 seelischesbefinden_neu
 generalisiertemuskelschwaeche
 autoimmunerkrankungen_rbzu

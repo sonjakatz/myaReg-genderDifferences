@@ -11,5 +11,5 @@ achrak_rb
 antimuskak_rb
 age_erstmanifestation
 scoreadl_neu
-chronicfatigue_neu
+chronicfatigue_normalised
 seelischesbefinden_neu

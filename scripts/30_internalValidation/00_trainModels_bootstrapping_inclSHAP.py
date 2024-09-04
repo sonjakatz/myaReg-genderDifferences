@@ -37,35 +37,34 @@ import pickle
 
 def get_input():
     try:
-        n_bootstrap = sys.argv[1]
-        dataset = sys.argv[2]
-        percentBoruta = sys.argv[3]
+        dataset = sys.argv[1]
+        percentBoruta = sys.argv[2]
     except IndexError:
         print("ERROR\tPlease enter a valid dataset name (ENTRY, PRESURGERY,POSTSURGERY, BL)")
         sys.exit()
-    return int(n_bootstrap), dataset, int(percentBoruta)
+    return dataset, int(percentBoruta)
 
 
 ''' 
 Prepare input
 '''
-n_bootstrap, dataset, percentBoruta = get_input()
+dataset, percentBoruta = get_input()
 target = "gender"
 saveFig_quickCheck = False
 
 ################### Variable selection ###################
 
-# ''' 
-# IF: automated feature selection
-# '''
-# varFolder = "boruta"
-# vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
-
 ''' 
-ELSE: Manual variable list
+IF: automated feature selection
 '''
-varFolder = "manual"
-vars = "onlyHisto" #"allVariables"
+varFolder = "boruta"
+vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
+
+# ''' 
+# ELSE: Manual variable list
+# '''
+# varFolder = "manual"
+# vars = "partiallyValidated" #"allVariables"
 
 #########################################################
 

@@ -121,9 +121,9 @@ preprocessor = imputation_scaling(num_columns, bin_columns, cat_columns, X)
 columnOrderAfterPreprocessing = [ele[5:] for ele in preprocessor.get_feature_names_out()]
 
 
-for perc in [80]:    ### 100,80
+for perc in [82]:    ### 100,80
 
-    for i in range(50,80):  ## 1,30
+    for i in range(1,2):  ## 1,30
 
         outname_json=f"{i}__{target}_iterativeBoruta_{perc}perc.json"
 

@@ -1,0 +1,610 @@
+env_myaReg
+
+
+LOADING DATA
+(1814, 16)
+gender
+1    1019
+0     795
+Name: count, dtype: Int64
+5 ['age_erstmanifestation', 'scoreadl_neu', 'chronicfatigue_normalised', 'autoimmunerkrankungen_rbzu', 'seelischesbefinden_neu']
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 671
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 672
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 653
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 661
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 682
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 646
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 673
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 654
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 686
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 646
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 680
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 673
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 662
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 687
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 654
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 689
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 641
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 669
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 647
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 673
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 664
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 673
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 657
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 659
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 661
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 671
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 678
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 649
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 671
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 679
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 652
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 649
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 677
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 650
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 668
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 652
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 674
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 673
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 694
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 655
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 680
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 664
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 651
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 652
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 687
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 659
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 684
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 680
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 661
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 673
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 657
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 657
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 693
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 647
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 643
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 653
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 662
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 668
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 647
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 655
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 683
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 659
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 671
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 685
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 696
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 683
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 678
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 683
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 659
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 682
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 679
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 674
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 664
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 677
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 649
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 687
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 655
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 688
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 689
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 678
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 669
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 662
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 679
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 686
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 659
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 688
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 662
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 662
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 650
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 639
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 641
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 670
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 680
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 678
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 648
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 668
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 674
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 672
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 670
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 661
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 635
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 683
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 689
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 657
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 691
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 661
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 650
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 690
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 669
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 692
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 647
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 669
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 655
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 677
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 644
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 677
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 636
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 678
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 653
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 648
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 671
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 696
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 679
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 664
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 651
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 654
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 661
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 669
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 654
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 686
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 640
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 687
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 679
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 640
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 650
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 654
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 691
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 672
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 668
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 647
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 672
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 686
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 649
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 653
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 685
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 678
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 655
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 682
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 672
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 692
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 645
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 683
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 677
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 670
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 664
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 659
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 669
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 684
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 673
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 680
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 659
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 670
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 669
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 655
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 672
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 674
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 655
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 661
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 655
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 671
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 677
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 688
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 654
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 668
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 652
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 667
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 683
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 684
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 687
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 639
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 677
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 661
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 640
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 678
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 671
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 672
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 678
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 659
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits

@@ -68,13 +68,13 @@ def imputation_scaling(num_columns, bin_columns, cat_columns, X, ohe=False):
 		enc_cat =  OrdinalEncoder(dtype=np.int64, handle_unknown="use_encoded_value", unknown_value=9999)
 
 	num_transformer = Pipeline([
-		("scaler", MinMaxScaler()),
 		("imputer", IterativeImputer(random_state=11,       ### Set random state so models can be compared with same split!
 						   max_iter=10,
 						   verbose=0,
 						   tol=0.001,
 						   sample_posterior=True,
-						   n_nearest_features=5))])
+						   n_nearest_features=5)),
+        ("scaler", MinMaxScaler())])
 
 	bin_transformer = Pipeline([
 		("imputer", KNNImputer(n_neighbors=5)),
@@ -125,13 +125,14 @@ def pipe_imputation_scaling(num_columns, bin_columns, cat_columns):
     '''
 
     num_transformer = Pipeline([
-        ("scaler", MinMaxScaler()),
-        ("imputer", IterativeImputer(random_state=None,  
+        #("scaler", MinMaxScaler()),
+        ("imputer", IterativeImputer(random_state=11,  
                            max_iter=10,
                            verbose=0,
                            tol=0.001,
                            sample_posterior=True,
-                           n_nearest_features=5))])
+                           n_nearest_features=5)),
+        ("scaler", MinMaxScaler())])
 
     bin_transformer = Pipeline([
         ("imputer", KNNImputer(n_neighbors=5))])

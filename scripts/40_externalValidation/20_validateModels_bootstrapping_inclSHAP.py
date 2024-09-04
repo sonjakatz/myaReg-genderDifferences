@@ -50,9 +50,12 @@ Prepare data --> change here for different setups!
 '''
 n_bootstrap = get_input()
 target = "gender"
-dataset = "fullRegistry"
-varFolder = "manual"
-vars = "partiallyValidated" 
+
+
+dataset = "natural"
+percentBoruta = 100
+varFolder = "boruta"
+vars = f"{target}_bootstrapped_iterativeBoruta_{percentBoruta}perc"
 
 
 
@@ -86,7 +89,7 @@ data[tmp] = data[tmp].astype(pd.Int64Dtype())
 
 
 ''' Only parse variables needed for model '''
-variables = pd.read_csv(f"{PATH}/results/20_featureSelection/{dataset}/manual/partiallyValidated.txt", 
+variables = pd.read_csv(f"{PATH}/results/20_featureSelection/{dataset}/{varFolder}/{vars}.txt", 
                        header=None)[0].tolist()
 variables.append("gender")
 variables_dutch = [varTranslation[ele] for ele in variables]
