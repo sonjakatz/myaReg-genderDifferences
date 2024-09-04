@@ -2,9 +2,10 @@
     "age_erstmanifestation": "agefirstsymp",
     "Diagnosedauer": "Delay_years",
     "scoreadl_neu": "MGadl",
-    "seelischesbefinden_neu": "HADSd",
+    "seelischesbefinden_neu": "HADS_comb",
     "autoimmunerkrankungen_rbzu": "AIDhistory",
     "achrak_rb": "MGsubgroup_inclPATreported_achrak",
     "thymektomie_gr": "Thymectomy",
+    "chronicfatigue_normalised":"CISfatigue_minmax",
     "gender":"gender"
 }

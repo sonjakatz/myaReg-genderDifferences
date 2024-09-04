@@ -42,5 +42,6 @@
     "histologie_sprb":"object",
     "thymom_ja_nein":"float32",
     "thymushyperplasie_ja_nein":"float32",
-    "thymus_unauffällig_ja_nein":"float32"
+    "thymus_unauffällig_ja_nein":"float32",
+    "chronicfatigue_normalised":"float64"
 }

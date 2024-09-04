@@ -13,6 +13,7 @@
     "CISfatigue":"float64", 
     "Fatigue_YES_NO":"float32",
     "HADSd":"float64", 
+    "HADS_comb":"float64",
     "depression_yes_no":"float32",
     "HADSa":"float64",
     "PSQI":"float64", 

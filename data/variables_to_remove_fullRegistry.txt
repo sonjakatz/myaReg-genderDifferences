@@ -1,3 +1,4 @@
 age
 age_bei_diagnose
 scoreqol_neu
+chronicfatigue_neu
