@@ -1,7 +1,7 @@
 #!/bin/bash
 #-----------------------------Other information------------------------
 #SBATCH --comment=773320000
-#SBATCH --job-name=fs_full80
+#SBATCH --job-name=natural
 #-----------------------------Required resources-----------------------
 #SBATCH --time=1500
 #SBATCH --mem=2048
