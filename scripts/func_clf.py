@@ -6,7 +6,7 @@ from sklearn.metrics import auc, roc_curve, average_precision_score, roc_auc_sco
 from sklearn.pipeline import Pipeline
 import shap
 
-from func_prediction import sample_w_replacement
+from func_imputeScale import sample_w_replacement
 
 
 def classify_leave_one_out_cv(clf, 
@@ -224,63 +224,3 @@ def externalValidate_boostrap_inclSHAP(X,
     return dic_results, shap_values_per_bootstrap, proba_per_bootstrap
 
 
-
-
-def externalValidate_finetune_boostrap_inclSHAP(X, 
-                                y, 
-                                clf, 
-                                perc_samples_per_boostrap=1):
-    
-    ''' 
-    Run classifier with bootstrapping and SHAP analysis
-    '''
-
-
-    ''' Bootstrap '''
-    train_idx, test_idx = sample_w_replacement(X, 
-                                               n_size=np.ceil(X.shape[0]*perc_samples_per_boostrap).astype("int"),
-                                               stratify=y,
-                                               random_state=None)       
-
-    #print(len(train_idx), len(test_idx))
-
-    X_train = X.iloc[train_idx].copy(); y_train = y[train_idx].copy()
-    X_test = X.iloc[test_idx].copy(); y_test = y[test_idx].copy()
-
-
-    ### Finetune
-    clf.fit(X_train, y_train)
-
-    ### Score
-    y_predProba = clf.predict_proba(X_test)[:,1]
-    fpr, tpr, _ = roc_curve(y_test,y_predProba)
-    auc = roc_auc_score(y_test, y_predProba)
-    precision_recall = average_precision_score(y_test,y_predProba)
-    dic_results = {"auc": auc,
-		           "average_prec":precision_recall, 
-                   "fpr":fpr, 
-                   "tpr":tpr}  
-    
-    
-
-    ''' 
-    SHAP 
-    '''
-    # Use SHAP to explain predictions
-    shap_values_per_bootstrap = dict()
-    explainer = shap.TreeExplainer(clf)
-    shap_values = explainer.shap_values(X_test)[:,:,1]
-    # Extract SHAP information per fold per sample 
-    for i, idx in enumerate(test_idx):
-        shap_values_per_bootstrap[idx] = shap_values[i] #-#-#
-
-    ''' 
-    Save pred_proba()
-    '''    
-    proba_per_bootstrap = dict()
-    for i, idx in enumerate(X.index[test_idx]):
-        proba_per_bootstrap[idx] = y_predProba[i] #-#-#    
-
-
-
-    return dic_results, shap_values_per_bootstrap, proba_per_bootstrap

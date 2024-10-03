@@ -23,8 +23,8 @@ sys.path.append(f"{PATH_base}/scripts")
 import seaborn as sns 
 import shap
 
-from func_preprocess import read_data, subset_wo_missigness, remove_NA, parseVariables, clean_data, impute_scale 
-from func_prediction import pipe_imputation_scaling, pipe_supervisedSelector
+from func_preprocess import read_data
+from func_imputeScale import pipe_imputation_scaling, pipe_supervisedSelector
 from func_clf import classify_boostrap_inclSHAP
 
 
@@ -37,18 +37,19 @@ import pickle
 
 def get_input():
     try:
-        dataset = sys.argv[1]
-        percentBoruta = sys.argv[2]
+        n_bootstrap = sys.argv[1]
+        dataset = sys.argv[2]
+        percentBoruta = sys.argv[3]
     except IndexError:
         print("ERROR\tPlease enter a valid dataset name (ENTRY, PRESURGERY,POSTSURGERY, BL)")
         sys.exit()
-    return dataset, int(percentBoruta)
+    return int(n_bootstrap), dataset, int(percentBoruta)
 
 
 ''' 
 Prepare input
 '''
-dataset, percentBoruta = get_input()
+n_bootstrap, dataset, percentBoruta = get_input()
 target = "gender"
 saveFig_quickCheck = False
 

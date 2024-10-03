@@ -18,7 +18,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 from func_preprocess import read_data, subset_wo_missigness, remove_NA, parseVariables, clean_data, impute_scale 
-from func_prediction import pipe_imputation_scaling, pipe_supervisedSelector
+from func_imputeScale import pipe_imputation_scaling, pipe_supervisedSelector
 from sklearn.model_selection import GridSearchCV
 
 from sklearn.ensemble import RandomForestClassifier

@@ -59,7 +59,10 @@ def imputation_scaling(num_columns, bin_columns, cat_columns, X, ohe=False):
 	- Numerical features (float64):
 		- MICE
 		- MinMaxScaler
-
+    - Categorical features (int64):
+        - KNN
+    - Categorical features (objects):
+        - SimpleImputer("most_frequent")
 	'''
 
 	if ohe:
@@ -73,6 +76,7 @@ def imputation_scaling(num_columns, bin_columns, cat_columns, X, ohe=False):
 						   verbose=0,
 						   tol=0.001,
 						   sample_posterior=True,
+                           min_value=[0, 0, 0, 0, 0],   # manually fix the minimum value to be imputed for each variable...
 						   n_nearest_features=5)),
         ("scaler", MinMaxScaler())])
 
@@ -131,6 +135,7 @@ def pipe_imputation_scaling(num_columns, bin_columns, cat_columns):
                            verbose=0,
                            tol=0.001,
                            sample_posterior=True,
+                           min_value=[0]*len(num_columns),   # manually fix the minimum value to be imputed for each variable...
                            n_nearest_features=5)),
         ("scaler", MinMaxScaler())])
 

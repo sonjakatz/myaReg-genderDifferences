@@ -16,8 +16,8 @@ import json
 import sys
 sys.path.append("../")
 
-from func_preprocess import read_data, subset_wo_missigness, remove_NA, parseVariables, clean_data, impute_scale 
-from func_prediction import imputation_scaling
+from func_preprocess import read_data, subset_wo_missigness, remove_NA, parseVariables, clean_data
+from func_imputeScale import imputation_scaling
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.experimental import enable_iterative_imputer

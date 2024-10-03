@@ -1,7 +1,8 @@
 
 '''
-Internal validation using bootstrapping (for CI calculation)
+Externa validation using bootstrapping (for CI calculation)
 
+- load model trained on development cohort
 - boostrapping test dataset: resample with replacement (n_samples = X.shape[0]) [inspiration](https://sebastianraschka.com/blog/2022/confidence-intervals-for-ml.html#method-22-bootstrap-confidence-intervals-using-the-percentile-method)
 - include SHAP analysis
 - n_iter ~ 1000 
@@ -23,8 +24,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import shap
 
-from func_preprocess import read_data, subset_wo_missigness, remove_NA, parseVariables, clean_data, impute_scale 
-from func_prediction import pipe_imputation_scaling, pipe_supervisedSelector
+from func_imputeScale import pipe_imputation_scaling, pipe_supervisedSelector
 from func_clf import externalValidate_boostrap_inclSHAP
 
 

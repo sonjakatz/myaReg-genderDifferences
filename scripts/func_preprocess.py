@@ -5,7 +5,7 @@ import sys
 import os
 #PATH = "/home/sonja/PROJECTS/myaReg"
 
-from func_prediction import imputation_scaling
+from func_imputeScale import imputation_scaling
 
 
 def read_data(PATH, FILENAME):
