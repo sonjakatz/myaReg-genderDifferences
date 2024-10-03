@@ -13,6 +13,15 @@
 - **Meaning**: Gender-specific differences in autoimmune MG encompass clinical and paraclinical factors and might influence time to diagnosis as well as therapeutic response.
 
 
+## Installation
+
+```
+conda env create -f environment.yml
+source activate env_myaReg
+```
+
+_Please note that BorutaPy is no longer maintained and therefore requires an older version of numpy and scikit-learn; a seperate env for BorutaPy is advised_
+
 
 ## Contact
 
