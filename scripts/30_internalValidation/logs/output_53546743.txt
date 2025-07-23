@@ -1,0 +1,20 @@
+env_myaReg
+
+
+LOADING DATA
+(1814, 16)
+gender
+1    1019
+0     795
+Name: count, dtype: Int64
+5 ['age_erstmanifestation', 'scoreadl_neu', 'chronicfatigue_neu', 'autoimmunerkrankungen_rbzu', 'seelischesbefinden_neu']
+1814 668
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 666
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 670
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 657
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 679
+Fitting 3 folds for each of 27 candidates, totalling 81 fits

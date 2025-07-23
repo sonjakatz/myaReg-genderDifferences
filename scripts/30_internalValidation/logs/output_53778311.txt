@@ -1,0 +1,34 @@
+env_myaReg
+
+
+LOADING DATA
+(1814, 16)
+gender
+1    1019
+0     795
+Name: count, dtype: Int64
+['age_erstmanifestation', 'scoreadl_neu', 'chronicfatigue_normalised', 'autoimmunerkrankungen_rbzu', 'seelischesbefinden_neu']
+Fitting 5 folds for each of 27 candidates, totalling 135 fits
+Pipeline(steps=[('selector',
+                 <func_prediction.pipe_supervisedSelector object at 0x146cae4bf070>),
+                ('imputation',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('imputer',
+                                                                   IterativeImputer(n_nearest_features=5,
+                                                                                    random_state=11,
+                                                                                    sample_posterior=True)),
+                                                                  ('scaler',
+                                                                   MinMaxScaler())]),
+                                                  Index(['age_erstmanifestation', 'scoreadl_neu', 'chronicfatigue_normalise...
+                                                  Index(['autoimmunerkrankungen_rbzu'], dtype='object')),
+                                                 ('cat',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('encoding',
+                                                                   OrdinalEncoder(dtype=<class 'numpy.int64'>,
+                                                                                  handle_unknown='use_encoded_value',
+                                                                                  unknown_value=9999))]),
+                                                  Index([], dtype='object'))])),
+                ('classifier',
+                 RandomForestClassifier(max_depth=4, max_features=4,
+                                        n_estimators=300))])

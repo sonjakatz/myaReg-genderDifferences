@@ -1,0 +1,35 @@
+env_myaReg
+
+
+LOADING DATA
+(1814, 39)
+gender
+1    1019
+0     795
+Name: count, dtype: Int64
+['age_erstmanifestation', 'Diagnosedauer', 'scoreadl_neu', 'chronicfatigue_normalised', 'seelischesbefinden_neu', 'autoimmunerkrankungen_rbzu', 'thymektomie_gr']
+Fitting 5 folds for each of 27 candidates, totalling 135 fits
+Pipeline(steps=[('selector',
+                 <func_prediction.pipe_supervisedSelector object at 0x153cb4ac2a40>),
+                ('imputation',
+                 ColumnTransformer(transformers=[('num',
+                                                  Pipeline(steps=[('imputer',
+                                                                   IterativeImputer(n_nearest_features=5,
+                                                                                    random_state=11,
+                                                                                    sample_posterior=True)),
+                                                                  ('scaler',
+                                                                   MinMaxScaler())]),
+                                                  Index(['age_erstmanifestation', 'Diagnosedauer', 'scoreadl_neu',
+       'chronicf...
+                                                  Index(['autoimmunerkrankungen_rbzu', 'thymektomie_gr'], dtype='object')),
+                                                 ('cat',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer(strategy='most_frequent')),
+                                                                  ('encoding',
+                                                                   OrdinalEncoder(dtype=<class 'numpy.int64'>,
+                                                                                  handle_unknown='use_encoded_value',
+                                                                                  unknown_value=9999))]),
+                                                  Index([], dtype='object'))])),
+                ('classifier',
+                 RandomForestClassifier(max_depth=4, max_features=6,
+                                        n_estimators=700))])

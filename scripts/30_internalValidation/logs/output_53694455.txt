@@ -1,0 +1,50 @@
+env_myaReg
+
+
+LOADING DATA
+(1814, 38)
+gender
+1    1019
+0     795
+Name: count, dtype: Int64
+6 ['age_erstmanifestation', 'Diagnosedauer', 'scoreadl_neu', 'seelischesbefinden_neu', 'autoimmunerkrankungen_rbzu', 'thymektomie_gr']
+1814 676
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 673
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 656
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 675
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 668
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 664
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 663
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 657
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 660
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 674
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 691
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 668
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 658
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 669
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 681
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 665
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 699
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
+1814 642
+Fitting 3 folds for each of 27 candidates, totalling 81 fits
