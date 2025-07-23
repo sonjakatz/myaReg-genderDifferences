@@ -6,11 +6,12 @@
 
 ## Key points
 
-- **Question**: Are there gender-specific differences in clinical and/or paraclinical characteristics among patients with autoimmune myasthenia gravis (MG)?
+- **Question**: Can machine learning (ML) models identify and characterize sex-specific phenotypic differences in autoimmune myasthenia gravis (MG) based on clinical and sociodemographic parameters?
 
-- **Findings**: In this cross-sectional study that included 1814 MG patients, women showed significantly higher disease severity, longer time to diagnosis and less likelihood of positive antibody- and electrophysiological testing. Using a subset of seven variables, gender can be accurately predicted by machine learning models. This illustrates the strong gender differences between MG patients. Examining the decision making process of models more in detail enabled us to delineate the dominant clinical manifestation of female MG patients. 
 
-- **Meaning**: Gender-specific differences in autoimmune MG encompass clinical and paraclinical factors and might influence time to diagnosis as well as therapeutic response.
+- **Findings**: In this cross-sectional study of 1814 MG patients, ML models accurately estimated patient sex using seven clinical variables. This revealed a reproducible, nuanced sex-specific MG phenotype, externally validated. The analysis highlighted how clinical presentations vary significantly by sex, beyond what traditional comparisons typically show.
+
+- **Meaning**: Our study demonstrates ML's ability to elucidate sex-related heterogeneity in MG beyond classical comparisons. Recognizing these distinct phenotypes can inform more precise diagnostics and individualized management, fostering equitable patient care.
 
 
 ## Installation
@@ -25,7 +26,7 @@ _Please note that BorutaPy is no longer maintained and therefore requires an old
 
 ## Contact
 
-For questions or comments make an issue or mail to: sonja.katz@wur.nl
+For questions or comments make an issue or mail to: sonja.katz@hotmail.com
 
 **Corresponding author:**
 _Sarah Hoffmann, M.D._
