@@ -76,7 +76,7 @@ def imputation_scaling(num_columns, bin_columns, cat_columns, X, ohe=False):
 						   verbose=0,
 						   tol=0.001,
 						   sample_posterior=True,
-                           min_value=[0, 0, 0, 0, 0],   # manually fix the minimum value to be imputed for each variable...
+                           min_value=[0]*len(num_columns),  
 						   n_nearest_features=5)),
         ("scaler", MinMaxScaler())])
 
