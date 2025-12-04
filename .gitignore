@@ -1,4 +1,4 @@
 data/
 *pyc
-error_output*.txt
-output*.txt
+error_output*
+output*
