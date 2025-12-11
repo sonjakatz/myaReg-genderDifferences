@@ -3,7 +3,7 @@
 
 Iterative bootstrapped BorutaPy 
 
-(c) Sonja Katz, 2024
+(c) Sonja Katz, 2024P
 
 '''
 
@@ -59,11 +59,11 @@ def run_iterativeBoruta(X, y, cols, perc=100, n_iter=100, max_iter=100):
     return dict_boruta
 
 
-PATH = "/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
+PATH = "../.."
 
 ###################     EDIT HERE    ###################
 target = "gender"
-dataset = "natural"    #"histologie_subgroup"
+dataset = 'fullRegistry' #"fullRegistry"   # natural
 PATH_out = f"{PATH}/results/20_featureSelection/{dataset}/boruta"
 
 ''' 1. read data '''
@@ -87,7 +87,7 @@ var_subset_analysis = False   ### False
 #######
 if var_subset_analysis: 
     data = subset_wo_missigness(data, var_subset_analysis)
-data_clean = remove_NA(data, cutoff_perc=35)
+data_clean = remove_NA(data, cutoff_perc=36)
 
 ''' 
 3. OPTIONAL. remove the ones we dont like (correlated or else)
@@ -123,7 +123,7 @@ columnOrderAfterPreprocessing = [ele[5:] for ele in preprocessor.get_feature_nam
 
 for perc in [100]:    ### 100,80
 
-    for i in range(1,50):  ## 1,30
+    for i in range(1,50): #50 ## 1,30
 
         outname_json=f"{i}__{target}_iterativeBoruta_{perc}perc.json"
 
