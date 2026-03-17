@@ -1,0 +1,8 @@
+age_erstmanifestation
+Diagnosedauer
+scoreadl_neu
+seelischesbefinden_neu
+chronicfatigue_normalised
+autoimmunerkrankungen_rbzu
+thymektomie_gr
+generalisiertemuskelschwaeche

@@ -20,7 +20,7 @@ eval "$(conda shell.bash hook)"
 source activate env_myaReg
 echo $CONDA_DEFAULT_ENV
 
-HOME="/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
+HOME="../../"
 cd $HOME
 N_ITER=300
 DATASET="natural"   #"natural"  #"fullRegistry" #histologie_subgroup" 
@@ -29,7 +29,6 @@ BORUTAPERC=100
 
 ### Bootstrapping
 ## python scripts/30_internalValidation/00_trainModels_bootstrapping_inclSHAP.py $N_ITER $DATASET $BORUTAPERC
-
 
 
 #### Train one classifier on whole dataset  (for external validation)

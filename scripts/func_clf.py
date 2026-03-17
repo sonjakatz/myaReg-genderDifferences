@@ -102,17 +102,16 @@ def classify_boostrap_inclSHAP(X,
     Run classifier with bootstrapping and SHAP analysis
     '''
 
-
     ''' Bootstrap '''
     train_idx, test_idx = sample_w_replacement(X, 
                                                n_size=np.ceil(X.shape[0]*perc_samples_per_boostrap).astype("int"),
                                                stratify=y.to_numpy(),
                                                random_state=None)       
-
     print(len(train_idx), len(test_idx))
 
     X_train = X.iloc[train_idx].copy(); y_train = y.iloc[train_idx].copy()
     X_test = X.iloc[test_idx].copy(); y_test = y.iloc[test_idx].copy()
+
 
     ######### Bootstrapping sanity checks #########
     # _, a = np.unique(y_train,return_counts=True)
@@ -143,8 +142,9 @@ def classify_boostrap_inclSHAP(X,
     shap_values_per_bootstrap = dict()
     explainer = shap.TreeExplainer(gs.best_estimator_["classifier"])
     X_test_imputed = gs.best_estimator_["imputation"].transform(X_test)
-    shap_values = explainer.shap_values(X_test_imputed)[1] #explainer.shap_values(X_test_imputed)[:,:,1]
+    shap_values = explainer.shap_values(X_test_imputed)[:,:,1] #explainer.shap_values(X_test_imputed)[1] #
     # Extract SHAP information per fold per sample 
+    assert len(test_idx) == shap_values.shape[0]
     for i, idx in enumerate(test_idx):
         shap_values_per_bootstrap[idx] = shap_values[i] #-#-#
 
@@ -201,14 +201,14 @@ def externalValidate_boostrap_inclSHAP(X,
                    "fpr":fpr, 
                    "tpr":tpr}  
     
-
     ''' 
     SHAP 
     '''
     # Use SHAP to explain predictions
+    
     shap_values_per_bootstrap = dict()
     explainer = shap.TreeExplainer(clf)
-    shap_values = explainer.shap_values(X_val)[1]   #[:,:,1]
+    shap_values = explainer.shap_values(X_val)[:,:,1]   #[1]
     # Extract SHAP information per fold per sample 
     for i, idx in enumerate(val_idx):
         shap_values_per_bootstrap[idx] = shap_values[i] #-#-#

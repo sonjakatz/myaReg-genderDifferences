@@ -11,7 +11,7 @@ Internal validation using bootstrapping (for CI calculation)
 '''
 
 
-PATH_base = "/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
+PATH_base = "../.."
 
 import os
 import numpy as np

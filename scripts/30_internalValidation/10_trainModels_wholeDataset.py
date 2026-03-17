@@ -5,7 +5,7 @@ Train model on whole dataset to use later for external validation
 '''
 
 
-PATH = "/home/WUR/katz001/PROJECTS/myaReg-genderDifferences"
+PATH = "../.."
 
 import os
 import numpy as np

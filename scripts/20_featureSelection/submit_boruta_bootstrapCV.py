@@ -63,7 +63,7 @@ PATH = "../.."
 
 ###################     EDIT HERE    ###################
 target = "gender"
-dataset = 'fullRegistry' #"fullRegistry"   # natural
+dataset = 'natural' #"fullRegistry"   # natural
 PATH_out = f"{PATH}/results/20_featureSelection/{dataset}/boruta"
 
 ''' 1. read data '''
@@ -123,7 +123,7 @@ columnOrderAfterPreprocessing = [ele[5:] for ele in preprocessor.get_feature_nam
 
 for perc in [100]:    ### 100,80
 
-    for i in range(1,50): #50 ## 1,30
+    for i in range(7,50): #50 ## 1,30
 
         outname_json=f"{i}__{target}_iterativeBoruta_{perc}perc.json"
 
